@@ -1,0 +1,17 @@
+{
+  "name": "fun",
+  "version": "0.0.1",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "css-mqpacker": "^4.0.0",
+    "cssnext": "^1.8.4",
+    "csswring": "^4.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2"
+  }
+}
