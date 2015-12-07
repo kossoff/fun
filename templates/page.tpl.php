@@ -82,7 +82,20 @@
         </section>
         <!--/.l-header-region -->
       <?php endif; ?>
-
+      <div class="row">
+       <div class="large-12 columns">
+          <?php print
+            theme (
+              'links', array (
+                'links' => menu_navigation_links('menu-events'),
+                'attributes' => array (
+                  'class'=> array (
+                                   'small-block-grid-4',
+                                   'menu-events',
+                                   'text-center')) ));
+          ?>
+        </div>
+      </div>
     </header>
     <!--/.l-header -->
 
@@ -128,7 +141,7 @@
 
         <a id="main-content"></a>
 
-        <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+        <?php /* if ($breadcrumb): print $breadcrumb; endif; */ ?>
 
         <?php if ($title): ?>
           <?php print render($title_prefix); ?>

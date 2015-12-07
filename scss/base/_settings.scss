@@ -1435,7 +1435,7 @@ $topbar-height: rem-calc(90);
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $oil; //$white;
 $topbar-link-color-hover: darken($body-font-color, 20%); //$white;
-// $topbar-link-color-active: $white;
+$topbar-link-color-active: $orange; //$white;
 // $topbar-link-color-active-hover: $white;
 $topbar-link-weight: 14px; //$font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);

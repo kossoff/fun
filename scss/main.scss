@@ -113,9 +113,14 @@
 // Older IE support
 // @import "vendor/ie";
 
+
+@import "../fonts/foundation-icons/foundation-icons.css";
+
 body {
   header {
-    border-bottom: 1px solid $base-underline-color;
+    .contain-to-grid {
+      border-bottom: 1px solid $base-underline-color;
+    }
 
     nav.top-bar {
       ul.title-area {
@@ -129,12 +134,71 @@ body {
           }
         }
       }
+
+      ul#main-menu {
+        background-color: $white;
+        background: url('../images/bg_phone.svg') 100% 100% no-repeat;
+        background-size: contain;
+        background-position: top left;
+        float: left;
+
+        li {
+          background: none;
+
+          a {
+            background: none;
+          }
+
+          &.phone {
+            a {
+              color: $violet;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    ul.menu-events {
+      li {
+        padding: .625rem 0;
+
+        a {
+          color: $white;
+          font-size: 22px;
+        }
+
+        &.menu-441 {
+          background: #D31F35;
+        }
+
+        &.menu-442 {
+          background: #91298C;
+        }
+
+        &.menu-444 {
+          background: #8CC540;
+        }
+
+        &.menu-445 {
+          background: #F16722;
+        }
+      }
     }
   }
 
+  main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
   footer {
     background: url('../images/bg_footer.jpg') repeat-x;
+  }
+
+  &.page-contacts {
+    background: $violet;
+    color: $white;
   }
 }
 
