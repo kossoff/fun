@@ -1,4 +1,5 @@
 <div class="page-wrapper">
+  <div class="dumb-1200">
   <!--.page -->
   <div role="document" class="page">
 
@@ -132,7 +133,7 @@
     <!--.l-main -->
     <main role="main" class="row l-main">
       <!-- .l-main region -->
-      <div class="<?php print $main_grid; ?> main columns">
+      <div class="<?php print $main_grid; ?> main large-12 columns">
         <?php if (!empty($page['highlighted'])): ?>
           <div class="highlight panel callout">
             <?php print render($page['highlighted']); ?>
@@ -197,49 +198,39 @@
     <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
   </div>
   <!--/.page -->
+  </div> <!-- /.dumb-1200 -->
 </div>
 
   <!--.l-footer -->
   <footer role="contentinfo">
-    <div class="l-footer panel row"
-      <?php /* if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
-        <!--.footer-columns -->
-        <section class="row l-footer-columns">
-          <?php if (!empty($page['footer_firstcolumn'])): ?>
-            <div class="footer-first medium-3 columns">
-              <?php print render($page['footer_firstcolumn']); ?>
+    <div class="dumb-1200">
+      <?php if (!empty($page['footer_top'])): ?>
+        <div class="footer-top">
+          <div class="row">
+            <div class="large-12 columns">
+              <?php print render($page['footer_top']); ?>
             </div>
-          <?php endif; ?>
-          <?php if (!empty($page['footer_secondcolumn'])): ?>
-            <div class="footer-second medium-3 columns">
-              <?php print render($page['footer_secondcolumn']); ?>
-            </div>
-          <?php endif; ?>
-          <?php if (!empty($page['footer_thirdcolumn'])): ?>
-            <div class="footer-third medium-3 columns">
-              <?php print render($page['footer_thirdcolumn']); ?>
-            </div>
-          <?php endif; ?>
-          <?php if (!empty($page['footer_fourthcolumn'])): ?>
-            <div class="footer-fourth medium-3 columns">
-              <?php print render($page['footer_fourthcolumn']); ?>
-            </div>
-          <?php endif; ?>
-        </section>
-        <!--/.footer-columns-->
-      <?php endif; */ ?>
-
-      <?php if (!empty($page['footer'])): ?>
-        <div class="footer columns">
-          <?php print render($page['footer']); ?>
+          </div>
         </div>
       <?php endif; ?>
 
+      <?php if (!empty($page['footer_bottom'])): ?>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="large-12 columns">
+              <?php print render($page['footer_bottom']); ?>
+            </div>
+          </div>
+        </div>
+      <?php endif; ?>
+
+<!--    <div class="l-footer panel row"
       <?php if ($site_name) : ?>
         <div class="copyright columns">
           &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
         </div>
       <?php endif; ?>
-    </div>
+    </div>-->
+    </div> <!-- /.dumb-1200 -->
   </footer>
   <!--/.l-footer -->

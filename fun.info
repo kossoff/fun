@@ -69,11 +69,13 @@ regions[sidebar_second]      = Right Sidebar
 regions[triptych_first]      = Callout one
 regions[triptych_middle]     = Callout two
 regions[triptych_last]       = Callout three
-regions[footer_firstcolumn]  = Footer one
-regions[footer_secondcolumn] = Footer two
-regions[footer_thirdcolumn]  = Footer three
-regions[footer_fourthcolumn] = Footer four
-regions[footer]              = Footer
+;regions[footer_firstcolumn]  = Footer one
+;regions[footer_secondcolumn] = Footer two
+;regions[footer_thirdcolumn]  = Footer three
+;regions[footer_fourthcolumn] = Footer four
+;regions[footer]              = Footer
+regions[footer_top]              = Footer Top
+regions[footer_bottom]              = Footer Bottom
 
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
