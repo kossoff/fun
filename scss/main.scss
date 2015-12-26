@@ -159,36 +159,70 @@ body {
       }
     }
 
+    .menu-bg-left-wrapper {
+      background: url(../images/bg_before_events.svg) no-repeat;
+      background-color: white;
+      background-position: top left;
+      background-size: 120px 55px;
+    }
+
+    .menu-bg-right-wrapper {
+      background: url(../images/bg_after_events.svg) no-repeat;
+      background-position: top right;
+      background-size: 120px 55px;
+    }
+
     ul.menu-events {
+      margin-bottom: 0;
+
       li {
-        padding: .625rem 0;
+        margin: 0;
+        transition: 1s;
+        width: 25%;
 
         a {
           color: $white;
           font-size: 22px;
+          padding: .625rem 0;
         }
 
         &.menu-441 {
-          background: #D31F35;
+          background: $tf-red;
+
+          &:hover {
+            background: darken($tf-red, 20%);
+          }
         }
 
         &.menu-442 {
-          background: #91298C;
+          background: $tf-about-blue;
+
+          &:hover {
+            background: darken($tf-about-blue, 20%);
+          }
         }
 
         &.menu-444 {
-          background: #8CC540;
+          background: $tf-green;
+
+
+          &:hover {
+            background: darken($tf-green, 20%);
+          }
         }
 
         &.menu-445 {
-          background: #F16722;
+          background: $tf-orange;
+
+          &:hover {
+            background: darken($tf-orange, 20%);
+          }
         }
       }
     }
   }
 
   main {
-    padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
@@ -220,6 +254,62 @@ body {
       color: $white;
     }
   }
+
+  &.page-about {
+    h2,
+    h3 {
+      font-family: Verdana;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 22pt;
+    }
+
+    h3 {
+      font-size: 18pt;
+    }
+
+    p {
+      font-size: 15pt;
+      font-family: Verdana;
+      margin-bottom: 2rem;
+    }
+
+    .wide {
+      margin: 2rem 0;
+    }
+
+    .pane-1 {
+      h2 {
+        font-size: 22pt;
+        font-family: $body-font-family;
+        color: $dark-grey;
+      }
+    }
+
+    .pane-2 {
+      h2,
+      h3 {
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 18pt;
+      }
+    }
+
+    .pane-3 {
+      h2,
+      p {
+        font-family: $body-font-family;
+      }
+
+      .note {
+        font-size: 13pt;
+      }
+    }
+  }
 }
 
 .inline-list > li.grid-masonry-item {
@@ -243,4 +333,24 @@ body {
       height: $footer-height;
     }
   }
+}
+
+.text-violet {
+  color: $tf-about-violet;
+}
+
+.text-orange {
+  color: $tf-orange;
+}
+
+.text-red {
+  color: $tf-red;
+}
+
+.text-green {
+  color: $tf-green;
+}
+
+.text-blue {
+  color: $tf-about-blue;
 }

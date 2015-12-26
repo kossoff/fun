@@ -83,18 +83,22 @@
         </section>
         <!--/.l-header-region -->
       <?php endif; ?>
-      <div class="row">
-       <div class="large-12 columns">
-          <?php print
-            theme (
-              'links', array (
-                'links' => menu_navigation_links('menu-events'),
-                'attributes' => array (
-                  'class'=> array (
-                                   'small-block-grid-4',
-                                   'menu-events',
-                                   'text-center')) ));
-          ?>
+      <div class="menu-bg-left-wrapper">
+        <div class="menu-bg-right-wrapper">
+          <div class="row">
+           <div class="large-12 columns">
+              <?php print
+                theme (
+                  'links', array (
+                    'links' => menu_navigation_links('menu-events'),
+                    'attributes' => array (
+                      'class'=> array (
+                                       'inline-list',
+                                       'menu-events',
+                                       'text-center')) ));
+              ?>
+            </div>
+          </div>
         </div>
       </div>
     </header>
