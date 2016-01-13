@@ -15,19 +15,19 @@
 <div class="wide" <?php !empty($css_id) ? print 'id="' . $css_id . '"' : ''; ?>>
   <?php print $content['top']; ?>
 </div>
-<div class="row">
-  <div class="medium-8 columns">
+<div class="row collapse">
+  <div class="medium-9 columns">
     <?php print $content['middle_1']; ?>
   </div>
-  <div class="medium-4 columns">
+  <div class="medium-3 columns">
     <?php print $content['middle_2']; ?>
   </div>
 </div>
-<div class="row">
-  <div class="medium-8 columns">
+<div class="row collapse">
+  <div class="medium-9 columns">
     <?php print $content['bottom_1']; ?>
   </div>
-  <div class="medium-4 columns">
+  <div class="medium-3 columns">
     <?php print $content['bottom_2']; ?>
   </div>
 </div>

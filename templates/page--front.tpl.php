@@ -44,7 +44,8 @@
                     'links' => menu_navigation_links('menu-events'),
                     'attributes' => array (
                       'class'=> array (
-                                       'inline-list',
+                                       'large-block-grid-4',
+                                       'small-block-grid-1',
                                        'menu-events',
                                        'text-center')) ));
               ?>
