@@ -29,28 +29,24 @@
         }
       ?>
       <img src="<?php print '/' . drupal_get_path('theme',$GLOBALS['theme']) . '/images/' . $type_img; ?>">
-      <?php print render($content['field_event_datetime']); ?>
+      <i class="fa fa-calendar fw"></i><?php print render($content['field_event_datetime']); ?>
       Возрастная категория:
       от <?php print render($content['field_event_age_from']); ?> до <?php print render($content['field_event_age_to']); ?> лет
     </div>
     <div class="large-9 columns">
       <?php print render($content['field_event_image']); ?>
-      <?php print render($content['field_event_price']); ?>
-      <?php print render($content['field_event_location']); ?>
+      <i class="fa fa-rub fw"></i><?php print render($content['field_event_price']); ?>
+      <i class="fa fa-map-marker fw"></i><?php print render($content['field_event_location']); ?>
     </div>
   </div>
 
   <?php
-  // We hide the comments and links now so that we can render them later.
-  hide($content['comments']);
-  hide($content['links']);
-  hide($content['field_tags']);
-  print render($content);
+    hide($content['field_event_category']);
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    print render($content);
   ?>
-
-  <?php if (!empty($content['field_tags']) && !$is_front): ?>
-    <?php print render($content['field_tags']) ?>
-  <?php endif; ?>
 
   <?php print render($content['links']); ?>
   <?php print render($content['comments']); ?>
