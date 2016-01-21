@@ -36,20 +36,21 @@
 
       <div class="menu-bg-left-wrapper">
         <div class="menu-bg-right-wrapper">
-          <div class="row">
-           <div class="large-12 columns">
-              <?php print
-                theme (
-                  'links', array (
-                    'links' => menu_navigation_links('menu-events'),
-                    'attributes' => array (
-                      'class'=> array (
-                                       'inline-list',
-                                       'menu-events',
-                                       'text-center')) ));
-              ?>
-            </div>
-          </div>
+          <?php
+            print theme (
+              'links', array (
+                'links' => menu_navigation_links('menu-events'),
+                'attributes' => array (
+                  'class'=> array (
+                    'button-group',
+                    'even-4',
+                    'stack-for-small',
+                    'menu-events',
+                  )
+                )
+              )
+            );
+          ?>
         </div>
       </div>
     </header>
