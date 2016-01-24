@@ -1467,7 +1467,7 @@ $topbar-link-bg-hover: $topbar-bg; //$jet;
 // $topbar-dropdown-link-bg-hover: $jet;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: $white;
+$topbar-dropdown-toggle-color: black; //$white;
 // $topbar-dropdown-toggle-alpha: .4;
 
 // $topbar-dropdown-label-color: $monsoon;
@@ -1480,8 +1480,8 @@ $topbar-link-bg-hover: $topbar-bg; //$jet;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
+// $topbar-menu-link-color: black; //$white;
+$topbar-menu-icon-color: $dark-grey; //$white;
 // $topbar-menu-link-color-toggled: $jumbo;
 // $topbar-menu-icon-color-toggled: $jumbo;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon

@@ -29,14 +29,18 @@
         }
       ?>
       <img src="<?php print '/' . drupal_get_path('theme',$GLOBALS['theme']) . '/images/' . $type_img; ?>">
-      <i class="fa fa-calendar fw"></i><?php print render($content['field_event_datetime']); ?>
-      Возрастная категория:
+      <div class="circus text-center event-age-plus">
+        <?php print render($content['field_event_age_from']); ?>+
+      </div>
+      <?php print render($content['field_event_date']); ?>
+      <?php print render ($content['field_event_time']); ?>
+      Возрастная категория:<br />
       от <?php print render($content['field_event_age_from']); ?> до <?php print render($content['field_event_age_to']); ?> лет
     </div>
     <div class="large-9 columns">
       <?php print render($content['field_event_image']); ?>
-      <i class="fa fa-rub fw"></i><?php print render($content['field_event_price']); ?>
-      <i class="fa fa-map-marker fw"></i><?php print render($content['field_event_location']); ?>
+      <?php print render($content['field_event_price']); ?>
+      <?php print render($content['field_event_location']); ?>
     </div>
   </div>
 

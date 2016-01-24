@@ -232,7 +232,7 @@ body {
               background: $tf-red;
               color: $white;
               padding-top: 12px;
-              border-radius: 24px;
+              border-radius: 50%;
               display: inline-block;
               height: 48px;
               width: 48px;
@@ -262,7 +262,7 @@ body {
           height: 48px;
           width: 48px;
           color: white !important;
-          border-radius: 24px;
+          border-radius: 50%;
           margin-right: 1rem;
           padding-top: 8px;
           text-align: center;
@@ -375,6 +375,12 @@ body {
     max-width: 1200px;
   }
 
+  &.node-type-event {
+    h1.title {
+      color: $tf-red;
+    }
+  }
+
   footer {
     .dumb-1200 {
       background: url('../images/bg_footer.png');
@@ -401,4 +407,31 @@ body {
 
 .text-blue {
   color: $tf-about-blue;
+}
+
+.circus {
+  border-radius: 50%;
+}
+
+.location-label,
+.price-label {
+  background: $tf-red;
+  color: $white;
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding-top: .5rem;
+  padding-left: .7rem;
+  margin-top: .5rem;
+  margin-right: 1rem;
+}
+
+.event-age-plus {
+  background: $tf-red;
+  color: $white;
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  padding-top: .7rem;
+  margin: 0 auto;
 }
