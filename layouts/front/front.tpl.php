@@ -16,6 +16,10 @@
   <?php print $content['top']; ?>
 </div>
 <div class="row collapse">
+  <div class="medium-12 columns text-center">
+    <img  src="/<?php print path_to_theme(); ?>/images/upcoming.jpg" />
+    <h2>Предстоящие мероприятия</h2>
+  </div>
   <div class="medium-9 columns">
     <?php print $content['middle_1']; ?>
   </div>
@@ -24,6 +28,10 @@
   </div>
 </div>
 <div class="row collapse">
+  <div class="medium-12 columns text-center">
+    <img  src="/<?php print path_to_theme(); ?>/images/past.jpg" />
+    <h2>Прошедшие мероприятия</h2>
+  </div>
   <div class="medium-9 columns">
     <?php print $content['bottom_1']; ?>
   </div>
