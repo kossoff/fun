@@ -296,6 +296,18 @@ body {
     }
   }
 
+  &.not-front {
+    main {
+      padding-top: 4rem;
+    }
+  }
+
+  &.node-type-event {
+    h1.title {
+      color: $tf-red;
+    }
+  }
+
   &.page-contacts {
     .dumb-1200 .page {
       background: $violet;
@@ -311,15 +323,15 @@ body {
     }
 
     h2 {
-      font-size: 22pt;
+      font-size: 22px;
     }
 
     h3 {
-      font-size: 18pt;
+      font-size: 18px;
     }
 
     p {
-      font-size: 15pt;
+      font-size: 15px;
       font-family: Verdana;
       margin-bottom: 2rem;
     }
@@ -330,7 +342,7 @@ body {
 
     .pane-1 {
       h2 {
-        font-size: 22pt;
+        font-size: 22px;
         font-family: $body-font-family;
         color: $dark-grey;
       }
@@ -343,7 +355,7 @@ body {
       }
 
       p {
-        font-size: 18pt;
+        font-size: 18px;
       }
     }
 
@@ -354,7 +366,7 @@ body {
       }
 
       .note {
-        font-size: 13pt;
+        font-size: 13px;
       }
     }
   }
@@ -373,12 +385,6 @@ body {
     background: white;
     margin: 0 auto;
     max-width: 1200px;
-  }
-
-  &.node-type-event {
-    h1.title {
-      color: $tf-red;
-    }
   }
 
   footer {
