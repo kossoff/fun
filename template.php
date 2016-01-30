@@ -24,5 +24,5 @@ function fun_links__topbar_main_menu($variables) {
   $output = _zurb_foundation_links($links);
   // $variables['attributes']['class'][] = '';
 
-  return '<ul' . drupal_attributes($variables['attributes']) . '><li class="phone"><a href="tel:+74995022550">+7 (499) 502-25-50</li>' . $output . '</ul>';
+  return '<ul' . drupal_attributes($variables['attributes']) . '>' . $output . '</ul>';
 }

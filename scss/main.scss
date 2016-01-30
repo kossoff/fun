@@ -106,25 +106,27 @@ body {
         }
       }
 
-      ul#main-menu {
-        background-color: $white;
-        background: url('../images/bg_phone.svg') 100% 100% no-repeat;
-        background-size: contain;
-        background-position: top left;
-        float: left;
+      ul {
+        &#main-menu { background-color: $white;
+          background: url('../images/bg_phone.svg') 100% 100% no-repeat;
+          background-size: contain;
+          background-position: top left;
+          float: left;
 
-        li {
-          background: none;
-
-          a {
+          li {
             background: none;
-          }
 
-          &.phone {
             a {
-              color: $violet;
-              font-weight: bold;
+              background: none;
             }
+          }
+        }
+
+        li.phone {
+          a {
+            color: $violet;
+            font-weight: bold;
+            font-size: 110%;
           }
         }
       }
@@ -308,13 +310,6 @@ body {
     }
   }
 
-  &.page-contacts {
-    .dumb-1200 .page {
-      background: $violet;
-      color: $white;
-    }
-  }
-
   &.page-about {
     h2,
     h3 {
@@ -379,19 +374,14 @@ body {
 
 
 body {
-  background: #5d5d5d;
-
   .dumb-1200 {
-    background: white;
     margin: 0 auto;
     max-width: 1200px;
   }
 
   footer {
-    .dumb-1200 {
-      background: url('../images/bg_footer.png');
-      height: $footer-height;
-    }
+    background: url('../images/bg_footer.png');
+    height: $footer-height;
   }
 }
 
