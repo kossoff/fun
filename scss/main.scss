@@ -222,7 +222,16 @@ body {
           padding: 1rem;
 
           .event-datetime {
+            color: $base-text-color;
             font-size:1.125rem;
+
+            .time-default {
+              display: inline-block;
+            }
+          }
+
+          img {
+            margin: 1rem 0;
           }
 
           .event-age-from-wrapper {
