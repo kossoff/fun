@@ -195,6 +195,13 @@ body {
       margin-bottom: 1rem;
     }
 
+    .wrapper {
+      border: 1px solid $base-underline-color;
+      border-radius: 2px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
     .view-calendar-events {
       &.view-display-id-block_1 {
         border-top: 1px solid $base-underline-color;
@@ -216,10 +223,7 @@ body {
       &.view-display-id-block_2,
       &.view-display-id-block_3 {
         .wrapper {
-          border: 1px solid $base-underline-color;
-          border-radius: 2px;
           margin-right: 1rem;
-          padding: 1rem;
 
           .event-datetime {
             color: $base-text-color;

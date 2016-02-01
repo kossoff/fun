@@ -79,9 +79,9 @@
     <?php endif; ?>
 
     <!--.l-main -->
-    <main role="main" class="l-main row">
+    <main role="main" class="l-main">
       <!-- .l-main region -->
-      <div class="<?php print $main_grid; ?> large-12 columns main">
+      <div class="<?php print $main_grid; ?> main">
 
         <a id="main-content"></a>
 
