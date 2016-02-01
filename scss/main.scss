@@ -246,15 +246,28 @@ body {
   }
 
   footer {
-    // background: url('../images/bg_footer.jpg') repeat-x;
+    background: url('../images/bg_footer.png');
+    height: $footer-height;
 
     .footer-top {
       background-color: rgba(255,255,255,0.6);
+      height: $footer-height;
+      padding-top: 1.5rem;
 
-      .menu {
+      h6 {
+        color: $base-text-color;
+      }
+
+      ul.menu li {
+        margin-bottom: 1rem;
+
         a {
-          color: $base-text-color !important;
-          text-shadow: 1px 1px 2px $white;
+            background: none;
+            color: $base-text-color;
+            text-shadow: 1px 1px 2px $white;
+            font-size: 1.125rem;
+            margin: 0;
+            padding: 0;
         }
       }
 
@@ -285,6 +298,10 @@ body {
             background: #60a6da;
           }
         }
+      }
+
+      .copyright {
+        padding: 2rem 0;
       }
     }
 
@@ -377,11 +394,6 @@ body {
   .dumb-1200 {
     margin: 0 auto;
     max-width: 1200px;
-  }
-
-  footer {
-    background: url('../images/bg_footer.png');
-    height: $footer-height;
   }
 }
 

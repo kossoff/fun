@@ -116,32 +116,66 @@
 
   <!--.l-footer -->
   <footer role="contentinfo">
-      <?php if (!empty($page['footer_top'])): ?>
-        <div class="footer-top">
-          <div class="row">
-            <div class="large-12 columns">
-              <?php print render($page['footer_top']); ?>
+    <div class="footer-top">
+      <div class="row">
+        <div class="large-2 columns">
+          <?php /*print render($page['footer_top']);*/ ?>
+          <?php
+            print theme (
+              'links', array (
+                'links' => menu_navigation_links('main-menu'),
+                'attributes' => array (
+                  'class'=> array (
+                    'main-menu',
+                    'menu',
+                    'no-bullet'
+                  )
+                )
+              )
+            );
+          ?>
+        </div>
+        <div class="large-6 columns">
+          <?php
+            print theme (
+              'links', array (
+                'links' => menu_navigation_links('menu-events'),
+                'attributes' => array (
+                  'class'=> array (
+                    'menu-events',
+                    'menu',
+                    'no-bullet'
+                  )
+                )
+              )
+            );
+          ?>
+        </div>
+        <div class="large-4 columns">
+          <div class=" social-links">
+          <h6>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h6>
+          <a class="facebook" href="https://www.facebook.com/groups/time.fun.ru/"><i  class="fa fa-facebook fw fa-2x"></i></a>
+          <a class="vkontakte" href="https://vk.com/timefun"><i  class="fa fa-vk fw fa-2x"></i></a>
+          <a class="instagram" href="https://www.instagram.com/timefun_ru/"><i  class="fa fa-instagram fw fa-2x"></i></a>
+          <a class="twitter" href="https://twitter.com/timefun_ru/"><i  class="fa fa-twitter fw fa-2x"></i></a>
+          </div>
+          <?php if ($site_name) : ?>
+            <div class="copyright">
+              &copy; 2015&nbsp;&mdash; <?php print date('Y') . ' ' . $site_name; ?>
             </div>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+
+    <?php /* if (!empty($page['footer_bottom'])): ?>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="large-12 columns">
+            <?php print render($page['footer_bottom']); ?>
           </div>
         </div>
-      <?php endif; ?>
-
-      <?php if (!empty($page['footer_bottom'])): ?>
-        <div class="footer-bottom">
-          <div class="row">
-            <div class="large-12 columns">
-              <?php print render($page['footer_bottom']); ?>
-            </div>
-          </div>
-        </div>
-      <?php endif; ?>
-
-<!--    <div class="l-footer panel row"
-      <?php if ($site_name) : ?>
-        <div class="copyright columns">
-          &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
-        </div>
-      <?php endif; ?>
-    </div>-->
+      </div>
+    <?php endif; */ ?>
   </footer>
   <!--/.l-footer -->
