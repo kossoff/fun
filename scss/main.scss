@@ -410,6 +410,26 @@ body {
   }
 }
 
+#gallery {
+  outline: medium none;
+  overflow: auto;
+  position: relative;
+
+  .field-name-field-event-gallery {
+    width: auto;
+    height: 180px;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    a {
+      img {
+        padding-right:.5rem;
+        // float: left;
+      }
+    }
+  }
+}
+
 .text-violet {
   color: $tf-about-violet;
 }

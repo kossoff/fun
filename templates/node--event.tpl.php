@@ -53,8 +53,17 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
+    hide($content['field_event_gallery']);
     print render($content);
   ?>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="gallery">
+        <?php print render($content['field_event_gallery']); ?>
+      </div>
+    </div>
+  </div>
 
   <?php print render($content['links']); ?>
   <?php print render($content['comments']); ?>
