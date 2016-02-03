@@ -31,10 +31,12 @@
               break;
           }
         ?>
-        <img src="<?php print '/' . drupal_get_path('theme',$GLOBALS['theme']) . '/images/' . $type_img; ?>">
-        <div class="circus text-center event-age-plus">
+        <p>
+          <img src="<?php print '/' . drupal_get_path('theme',$GLOBALS['theme']) . '/images/' . $type_img; ?>">
+        </p>
+        <p><div class="circus text-center event-age-plus">
           <?php print render($content['field_event_age_from']); ?>+
-        </div>
+        </div></p>
         Возрастная категория:<br />
         от <?php print render($content['field_event_age_from']); ?> до <?php print render($content['field_event_age_to']); ?> лет
       </div>
