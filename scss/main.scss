@@ -385,6 +385,9 @@ body {
     h1.title {
       color: $tf-red;
     }
+    .time-default {
+      display: inline;
+    }
   }
 
   &.page-about {
