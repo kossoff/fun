@@ -333,6 +333,8 @@ body {
       .wrapper-events-header {
         img {
           height:100px;
+          position: relative;
+          z-index: 2;
         }
 
         h2 {
@@ -341,11 +343,12 @@ body {
           text-transform: uppercase;
           background: white;
           border: 1px solid $base-text-color;
-          border-radius: 5px;
+          border-radius: 15px;
           margin-bottom: 0;
           padding: 1rem 1.125rem;
           display:inline-block;
           position:relative;
+          top: -1rem;
           z-index:1;
         }
 
@@ -355,7 +358,7 @@ body {
           opacity: .8;
           background-image: linear-gradient(to left,transparent,$base-text-color,transparent);
           position: relative;
-          top: -75px;
+          top: -92px;
         }
 
         // https://css-tricks.com/examples/ShapesOfCSS/
@@ -369,7 +372,6 @@ body {
           border-right: 14px solid transparent;
           border-top: 20px solid $base-text-color;
           position: relative;
-          top: 17px;
         }
       }
     }

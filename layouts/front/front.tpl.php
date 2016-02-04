@@ -18,11 +18,14 @@
 <div class="row collapse">
   <div class="medium-12 columns text-center">
     <div class="wrapper-events-header">
-      <img  src="/<?php print path_to_theme(); ?>/images/upcoming.jpg" />
-      <div><h2>Предстоящие мероприятия</h2></div>
+      <img src="/<?php print path_to_theme(); ?>/images/upcoming.jpg" />
+      <div class="wrapper-header"><h2>Предстоящие мероприятия</h2></div>
       <span class="triangle"></span>
       <hr>
     </div>
+  </div>
+  <div class="medium-12 columns">
+    <p>Вы всегда можете <a href="#">оставить заявку</a> на участие в предстоящих мероприятиях ;)</p>
   </div>
   <div class="medium-9 columns">
     <?php print $content['middle_1']; ?>
@@ -34,11 +37,14 @@
 <div class="row collapse">
   <div class="medium-12 columns text-center">
     <div class="wrapper-events-header">
-      <img  src="/<?php print path_to_theme(); ?>/images/past.jpg" />
-      <div><h2>Прошедшие мероприятия</h2></div>
+      <img src="/<?php print path_to_theme(); ?>/images/past.png" />
+      <div class="wrapper-header"><h2>Прошедшие мероприятия</h2></div>
       <span class="triangle"></span>
       <hr>
     </div>
+  </div>
+  <div class="medium-12 columns">
+    <p>Хотелось бы повторить? <a href="#">Оставьте свои пожелания</a> в отзывах и мы обязательно их учтем!</p>
   </div>
   <div class="medium-9 columns">
     <?php print $content['bottom_1']; ?>
