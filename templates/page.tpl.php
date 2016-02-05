@@ -40,7 +40,6 @@
                     'class'=> array (
                       'button-group',
                       'even-4',
-                      'stack-for-small',
                       'menu-events',
                     )
                   )

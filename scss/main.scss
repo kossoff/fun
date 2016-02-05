@@ -528,3 +528,13 @@ body {
   padding-top: .7rem;
   margin: 0 auto;
 }
+
+@media #{$small-only} {
+  ul.menu-events {
+    li {
+      a.button {
+        padding: .5rem .25rem;
+      }
+    }
+  }
+}
