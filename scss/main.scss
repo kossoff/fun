@@ -151,9 +151,10 @@ body {
 
     ul.menu-events {
       li {
-        a {
-          // font-size: 22px;
+        a.button {
+          font-size: 22px;
           margin-bottom: 0;
+          padding: .5rem 1rem;
         }
 
         &.menu-441 a {
@@ -539,6 +540,7 @@ body {
   ul.menu-events {
     li {
       a.button {
+        font-size: .86667rem;
         padding: .5rem .25rem;
       }
     }
