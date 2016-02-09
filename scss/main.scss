@@ -463,6 +463,48 @@ body {
 
 
 body {
+  &.page-taxonomy {
+    header {
+      .menu-events {
+        a:not(.active) {
+          background: lighten($dark-grey, 30%);
+        }
+      }
+    }
+  }
+
+  &.page-taxonomy-term-1 {
+    header {
+      .menu-events {
+        border-bottom: 1rem solid $tf-red;
+      }
+    }
+  }
+
+  &.page-taxonomy-term-3 {
+    header {
+      .menu-events {
+        border-bottom: 1rem solid $tf-about-blue;
+      }
+    }
+  }
+
+  &.page-taxonomy-term-2 {
+    header {
+      .menu-events {
+        border-bottom: 1rem solid $tf-green;
+      }
+    }
+  }
+
+  &.page-taxonomy-term-4 {
+    header {
+      .menu-events {
+        border-bottom: 1rem solid $tf-orange;
+      }
+    }
+  }
+
   .dumb-1200 {
     margin: 0 auto;
     max-width: 1200px;
