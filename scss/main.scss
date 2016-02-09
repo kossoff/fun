@@ -87,6 +87,10 @@
 // Older IE support
 // @import "vendor/ie";
 
+.text-bigger {
+  font-size: 18px;
+}
+
 body {
   header {
     .contain-to-grid {
@@ -191,6 +195,10 @@ body {
   main {
     padding-bottom: 4rem;
 
+    .taxonomy-term-description p {
+      @extend .text-bigger;
+    }
+
     .wide {
       margin-bottom: 1rem;
     }
@@ -221,7 +229,9 @@ body {
       }
 
       &.view-display-id-block_2,
-      &.view-display-id-block_3 {
+      &.view-display-id-block_3,
+      &.view-display-id-block_4,
+      &.view-display-id-block_5 {
         .wrapper {
           margin-right: 1rem;
 
@@ -254,6 +264,51 @@ body {
             }
           }
         }
+      }
+    }
+
+    .wrapper-events-header {
+      img {
+        height:100px;
+        position: relative;
+        z-index: 2;
+      }
+
+      h2 {
+        color: $base-text-color;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        background: white;
+        border: 1px solid $base-text-color;
+        border-radius: 15px;
+        margin-bottom: 0;
+        padding: 1rem 1.125rem;
+        display:inline-block;
+        position:relative;
+        top: -1rem;
+        z-index:1;
+      }
+
+      hr {
+        border: 0 none;
+        height: 1px;
+        opacity: .8;
+        background-image: linear-gradient(to left,transparent,$base-text-color,transparent);
+        position: relative;
+        top: -92px;
+      }
+
+      // https://css-tricks.com/examples/ShapesOfCSS/
+      // http://apps.eky.hk/css-triangle-generator/
+      // https://css-tricks.com/snippets/css/css-triangle/
+      .triangle {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-top: 20px solid $base-text-color;
+        position: relative;
       }
     }
   }
@@ -328,55 +383,6 @@ body {
     }
   }
 
-  &.front {
-    .main {
-      .wrapper-events-header {
-        img {
-          height:100px;
-          position: relative;
-          z-index: 2;
-        }
-
-        h2 {
-          color: $base-text-color;
-          font-size: 1.25rem;
-          text-transform: uppercase;
-          background: white;
-          border: 1px solid $base-text-color;
-          border-radius: 15px;
-          margin-bottom: 0;
-          padding: 1rem 1.125rem;
-          display:inline-block;
-          position:relative;
-          top: -1rem;
-          z-index:1;
-        }
-
-        hr {
-          border: 0 none;
-          height: 1px;
-          opacity: .8;
-          background-image: linear-gradient(to left,transparent,$base-text-color,transparent);
-          position: relative;
-          top: -92px;
-        }
-
-        // https://css-tricks.com/examples/ShapesOfCSS/
-        // http://apps.eky.hk/css-triangle-generator/
-        // https://css-tricks.com/snippets/css/css-triangle/
-        .triangle {
-          content: "";
-          width: 0;
-          height: 0;
-          border-left: 14px solid transparent;
-          border-right: 14px solid transparent;
-          border-top: 20px solid $base-text-color;
-          position: relative;
-        }
-      }
-    }
-  }
-
   &.not-front {
     main {
       padding-top: 4rem;
@@ -432,7 +438,7 @@ body {
       }
 
       p {
-        font-size: 18px;
+        @extend .text-bigger;
       }
     }
 
