@@ -26,6 +26,7 @@
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
             <ul class="right">
+              <li class="has-form"><a class="button round" href="#">Оставить заявку</a></li>
               <li class="phone"><a href="tel:+74995022550">+7 (499) 502-25-50</a></li>
             </ul>
           </section>
