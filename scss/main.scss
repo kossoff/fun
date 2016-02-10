@@ -420,16 +420,26 @@ body {
       margin-bottom: 2rem;
     }
 
+    .l-main {
+      padding-top: 0;
+    }
+
     .wide {
-      margin: 2rem 0;
+      margin-bottom: 2rem;
+    }
+
+    .watch-1 {
+      background: transparent url("../images/watch1.svg") no-repeat scroll right top;
+      padding-top: 3rem;
+    }
+
+    .watch-2 {
+      background: transparent url("../images/watch2.svg") no-repeat scroll right bottom;
+      padding-bottom: 8rem;
     }
 
     .pane-1 {
-      h2 {
-        font-size: 22px;
-        font-family: $body-font-family;
-        color: $dark-grey;
-      }
+      margin-bottom: 3rem;
     }
 
     .pane-2 {

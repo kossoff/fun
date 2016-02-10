@@ -12,7 +12,7 @@
  *   $content['middle']: The only panel in the layout.
  */
 ?>
-<div class="row">
+<div class="row watch-1">
   <div class="medium-12 columns">
     <?php print $content['middle']; ?>
   </div>
@@ -20,7 +20,7 @@
 <div class="wide" <?php !empty($css_id) ? print 'id="' . $css_id . '"' : ''; ?>>
   <?php print $content['wide_1']; ?>
 </div>
-<div class="row" <?php !empty($css_id) ? print 'id="' . $css_id . '"' : ''; ?>>
+<div class="row watch-2" <?php !empty($css_id) ? print 'id="' . $css_id . '"' : ''; ?>>
   <div class="medium-12 columns">
     <?php print $content['middle_2']; ?>
   </div>
