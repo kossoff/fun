@@ -464,6 +464,13 @@ body {
       }
     }
   }
+
+  &.page-feedback {
+    h2.pane-title,
+    .view-display-id-block_feedbacks h2 {
+      font-size: 1.25rem;
+    }
+  }
 }
 
 .inline-list > li.grid-masonry-item {
