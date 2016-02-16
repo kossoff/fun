@@ -61,9 +61,8 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <div id="gallery">
-        <?php print render($content['field_event_gallery']); ?>
-      </div>
+    <?php print views_embed_view('video', 'block_context'); ?>
+    <?php print render($content['field_event_gallery']); ?>
     </div>
   </div>
 
