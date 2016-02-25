@@ -61,8 +61,29 @@
 
   <div class="row">
     <div class="large-12 columns">
-    <?php print views_embed_view('video', 'block_context'); ?>
-    <?php print render($content['field_event_gallery']); ?>
+      <?php print views_embed_view('video', 'block_context'); ?>
+      <?php print render($content['field_event_gallery']); ?>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <a href="#" class="button radius expand">Оставить отзыв &#9656;</a>
+    </div>
+    <div class="large-8 columns">
+      <div class="text-center">
+        Поделиться событием
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 columns">
+      <h3><i class="fa fa-comment"></i> Отзывы</h3>
+      <?php print views_embed_view('feedbacks', 'block_feedbacks_on_event_page'); ?>
+    </div>
+    <div class="large-4 columns">
+      <img src="<?php print '/' . drupal_get_path('theme',$GLOBALS['theme']) . '/images/giraffe.png'; ?>" />
     </div>
   </div>
 
