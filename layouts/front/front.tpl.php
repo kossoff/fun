@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="medium-12 columns">
-    <p>Вы всегда можете <a href="#">оставить заявку</a> на участие в предстоящих мероприятиях ;)</p>
+    <p>Вы всегда можете <a href="/zayavka">оставить заявку</a> на участие в предстоящих мероприятиях ;)</p>
   </div>
   <div class="medium-9 columns">
     <?php print $content['middle_1']; ?>

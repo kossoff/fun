@@ -47,9 +47,27 @@
   $name_page = $plugin->view->name;
 ?>
 <?php if (!empty($pager_prefix)) print $pager_prefix; ?>
-<div class="row">
-  <div class="small-12 columns">
+<div class="row collapse">
+  <div class="large-1 columns show-for-medium-up">
+    <?php if (!empty($prev_url)) : ?>
+      <div class="date-prev left">
+        <?php
+        $text = '&larr;';
+        $text .= $mini ? '' : ' ' . t('Prev', array(), array('context' => 'date_nav'));
+        print l(t($text), $prev_url, $prev_options);
+        ?>
+      </div>
+    <?php endif; ?>
+  </div>
+  <div class="small-12 large-10 columns">
     <h3 class="text-center"><?php print $month_name[$month_now]; ?></h3>
+  </div>
+  <div class="large-1 columns show-for-medium-up">
+    <?php if (!empty($next_url)) : ?>
+      <div class="date-next right">
+        <?php print l(($mini ? '' : t('Next', array(), array('context' => 'date_nav')) . ' ') . '&rarr;', $next_url, $next_options); ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>
 
