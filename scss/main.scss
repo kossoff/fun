@@ -91,6 +91,14 @@
   font-size: 18px;
 }
 
+.button-yellow {
+  background: #FBC725 !important;
+
+  &:hover {
+    background: darken(#FBC725, 10%) !important;
+  }
+}
+
 body {
   header {
     .contain-to-grid {
@@ -111,19 +119,12 @@ body {
       }
 
       ul {
-        &#main-menu { background-color: $white;
-          background: url('../images/bg_phone.svg') 100% 100% no-repeat;
-          background-size: contain;
-          background-position: top left;
-          float: left;
-
-          li {
-            background: none;
-
-            a {
-              background: none;
-            }
-          }
+        &#main-menu {
+          // background-color: $white;
+          // background: url('../images/bg_phone.svg') 100% 100% no-repeat;
+          // background-size: contain;
+          // background-position: top left;
+          // float: left;
         }
 
         li.phone {
@@ -605,8 +606,8 @@ body {
   ul.menu-events {
     li {
       a.button {
-        font-size: .86667rem;
-        padding: .5rem .25rem;
+        font-size: .86667rem !important;
+        padding: .5rem .25rem  !important;
       }
     }
   }
