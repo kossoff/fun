@@ -205,12 +205,12 @@ body {
       margin-bottom: 1rem;
     }
 
-    .wrapper {
-      border: 1px solid $base-underline-color;
-      border-radius: 2px;
-      padding: 1rem;
-      margin-bottom: 2rem;
-    }
+    // .wrapper {
+    //   border: 1px solid $base-underline-color;
+    //   border-radius: 2px;
+    //   padding: 1rem;
+    //   margin-bottom: 2rem;
+    // }
 
     .view-calendar-events {
       &.view-display-id-block_1 {
@@ -235,7 +235,10 @@ body {
       &.view-display-id-block_4,
       &.view-display-id-block_5 {
         .wrapper {
-          margin-right: 1rem;
+          border: 1px solid $base-underline-color;
+          border-radius: 2px;
+          padding: 1rem;
+          margin-bottom: 2rem;
 
           .event-datetime {
             color: $base-text-color;
@@ -600,6 +603,16 @@ body {
   height: 3rem;
   padding-top: .7rem;
   margin: 0 auto;
+}
+
+.calendar-calendar td.has-events {
+  background:url(../images/cal_event_bg.png) ;
+  background-size: cover;
+
+  a {
+    color: $white;
+    font-weight: bold;
+  }
 }
 
 @media #{$small-only} {

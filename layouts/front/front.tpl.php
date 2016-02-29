@@ -34,7 +34,7 @@
     <?php print $content['middle_2']; ?>
   </div>
 </div>
-<div class="row collapse">
+<div class="row">
   <div class="medium-12 columns text-center">
     <div class="wrapper-events-header">
       <img src="/<?php print path_to_theme(); ?>/images/past.png" />
