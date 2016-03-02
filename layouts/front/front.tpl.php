@@ -43,9 +43,11 @@
       <hr>
     </div>
   </div>
+<!--
   <div class="medium-12 columns">
     <p>Хотелось бы повторить? <a href="#">Оставьте свои пожелания</a> в отзывах и мы обязательно их учтем!</p>
   </div>
+-->
   <div class="medium-9 columns">
     <?php print $content['bottom_1']; ?>
   </div>

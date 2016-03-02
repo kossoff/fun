@@ -233,7 +233,8 @@ body {
       &.view-display-id-block_2,
       &.view-display-id-block_3,
       &.view-display-id-block_4,
-      &.view-display-id-block_5 {
+      &.view-display-id-block_5,
+      &.view-display-id-page_upcoming {
         .wrapper {
           border: 1px solid $base-underline-color;
           border-radius: 2px;
@@ -243,6 +244,7 @@ body {
           .event-datetime {
             color: $base-text-color;
             font-size:1.125rem;
+            min-height: rem-calc(28);
 
             .time-default {
               display: inline-block;
@@ -259,7 +261,6 @@ body {
 
 
             .event-age-from {
-              background: $tf-red;
               color: $white;
               padding-top: 12px;
               border-radius: 50%;
@@ -268,6 +269,22 @@ body {
               width: 48px;
             }
           }
+        }
+
+        .wrapper.camps .event-age-from {
+          background: $tf-camp;
+        }
+
+        .wrapper.quests .event-age-from {
+          background: $tf-quest;
+        }
+
+        .wrapper.holidays .event-age-from {
+          background: $tf-holiday;
+        }
+
+        .wrapper.growth .event-age-from {
+          background: $tf-growth;
         }
       }
     }
@@ -612,6 +629,17 @@ body {
   a {
     color: $white;
     font-weight: bold;
+  }
+}
+
+.view-calendar-events .date-navx {
+  ul.pager {
+    li {
+      display: inline-block;
+      float: left;
+      margin: 0;
+      width: 33%;
+    }
   }
 }
 

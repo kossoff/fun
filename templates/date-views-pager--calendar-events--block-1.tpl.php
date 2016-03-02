@@ -27,6 +27,7 @@
  *   be used in the l() function, including rel=nofollow.
  */
 ?>
+
 <?php
   $month_name[1] = "Январь";
   $month_name[2] = "Февраль";
@@ -42,32 +43,36 @@
   $month_name[12] = "Декабрь";
   //$month_now = (int)substr($plugin->view->args[0],5,2); // берем аргумент из calendar views - текущая дата
   //$year_now = (int)substr($plugin->view->args[0],0,4);  // arg[0] = 2014-05-12, 0 и 4 - начиная с нулевого символа, 4 символа - 2014
+  // calendar_events
   $month_now = $plugin->view->date_info->month;
   $year_now = $plugin->view->date_info->year;
   $name_page = $plugin->view->name;
 ?>
-<?php if (!empty($pager_prefix)) print $pager_prefix; ?>
-<div class="row collapse">
-  <div class="large-1 columns show-for-medium-up">
+
+<?php if (!empty($pager_prefix)) : ?>
+<?php print $pager_prefix; ?>
+<?php endif; ?>
+<div class="date-nav-wrapper clearfix<?php if (!empty($extra_classes)): print $extra_classes; endif; ?>">
+  <div class="date-navx item-list">
+    <!-- <div class="date-heading">
+      <h3><?php print $nav_title ?></h3>
+    </div> -->
+    <ul class="pager clearfix">
     <?php if (!empty($prev_url)) : ?>
-      <div class="date-prev left">
+      <li>
         <?php
         $text = '&larr;';
         $text .= $mini ? '' : ' ' . t('Prev', array(), array('context' => 'date_nav'));
         print l(t($text), $prev_url, $prev_options);
         ?>
-      </div>
+      </li>
     <?php endif; ?>
-  </div>
-  <div class="small-12 large-10 columns">
-    <h3 class="text-center"><?php print $month_name[$month_now]; ?></h3>
-  </div>
-  <div class="large-1 columns show-for-medium-up">
+      <li><strong class="text-center"><?php print $month_name[$month_now]; ?></strong></li>
     <?php if (!empty($next_url)) : ?>
-      <div class="date-next right">
+      <li>
         <?php print l(($mini ? '' : t('Next', array(), array('context' => 'date_nav')) . ' ') . '&rarr;', $next_url, $next_options); ?>
-      </div>
+      </li>
     <?php endif; ?>
+    </ul>
   </div>
 </div>
-
