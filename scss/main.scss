@@ -87,6 +87,21 @@
 // Older IE support
 // @import "vendor/ie";
 
+.carousel {
+  display: block;
+  position: relative;
+}
+
+.clearing-blackout {
+  .carousel {
+    display: none;
+  }
+
+  .visible-img {
+    height: 100% !important;
+  }
+}
+
 .text-bigger {
   font-size: 18px;
 }
@@ -496,7 +511,7 @@ body {
 
 .inline-list > li.grid-masonry-item {
   margin-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 
