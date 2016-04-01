@@ -658,6 +658,17 @@ body {
   }
 }
 
+.form-item {
+  margin-bottom: 1.06667rem;
+
+  input[type="file"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select {
+    margin-bottom: 0;
+  }
+}
+
 @media #{$small-only} {
   ul.menu-events {
     li {
@@ -666,5 +677,9 @@ body {
         padding: .5rem .25rem  !important;
       }
     }
+  }
+
+  .webform-progressbar-page-label {
+    display: none;
   }
 }
